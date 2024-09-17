@@ -1,0 +1,65 @@
+:root {
+    --themeColor1: rgb(16,16,16);
+    --themeColor2: rgb(8,8,8);
+    --themeColor3: rgb(24,24,24);
+
+    --gapWidth: 4px;
+
+    --borderRadius: 12px;
+    --borderWidth: 2px;
+
+    --textSize: 16px;
+    --textSizeBig: 20px;
+    --textSizeBigger: 24px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(128,128,128);
+}
+
+ul {
+    font-size: var(--textSizeBigger);
+}
+li {
+    width: fit-content;
+    background-color: var(--themeColor1);
+
+    padding: var(--gapWidth);
+    margin: var(--gapWidth);
+
+    border-radius: var(--borderRadius);
+
+    font-size: var(--textSizeBig);
+}
+li li {
+    background-color: var(--themeColor3);
+
+    margin: 0px;
+
+    border-radius: calc(var(--borderRadius) - var(--gapWidth));
+
+    font-size: var(--textSize);
+}
+dt {
+    width: fit-content;
+    background-color: var(--themeColor2);
+    
+    padding: var(--gapWidth);
+
+    border-radius: calc(var(--borderRadius) - var(--gapWidth));
+
+    font-size: var(--textSize);
+}
+li li dt {
+    border-radius: calc(var(--borderRadius) - var(--gapWidth)*2);
+}
+dd {
+    font-size: var(--textSize);
+}
+hr {
+    height: 0px;
+
+    border-style: solid;
+    border-width: var(--borderWidth);
+    border-radius: var(--borderRadius);
+    border-color: var(--themeColor1);
+}
